@@ -27,7 +27,7 @@ int main(void) {
         } else if (strcasecmp(resposta, "B2") == 0) {
             filtrarRegistros();
         } else if (strcasecmp(resposta, "M1") == 0) {
-
+            somaDominio();
         } else if (strcasecmp(resposta, "M2") == 0) {
 
         } else if (strcasecmp(resposta, "M3") == 0) {

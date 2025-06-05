@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 #include "ListarRegistros.h"
+#include "../modelRecord.h"
 
 void listarRegistros() {
     FILE *fp = fopen("../bankdataset.dat", "rb");
@@ -33,15 +33,6 @@ void listarRegistros() {
 
         fclose(fp);
         fclose(txt);
-
-        printf("\nAperte ENTER para voltar ao menu!\n");
-        for (int i = 0;; i++) {
-            if (_kbhit()) {
-                if (getch() == 13) {
-                    break;
-                }
-            }
-        }
     } else {
         printf("erro ao abrir o arquivo.\n");
     }

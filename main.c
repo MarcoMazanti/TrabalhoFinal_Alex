@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <conio.h>
 #include "Funcionalidades/funcionalidades.h"
 
 int main(void) {
@@ -24,7 +25,7 @@ int main(void) {
         if (strcasecmp(resposta, "B1") == 0) {
             listarRegistros();
         } else if (strcasecmp(resposta, "B2") == 0) {
-
+            filtrarRegistros();
         } else if (strcasecmp(resposta, "M1") == 0) {
 
         } else if (strcasecmp(resposta, "M2") == 0) {
@@ -41,9 +42,18 @@ int main(void) {
 
         } else {
             printf("Saindo do Programa!\n");
+            break;
+        }
+
+        printf("\nAperte ENTER para voltar ao menu!\n");
+        for (int i = 0;; i++) {
+            if (_kbhit()) {
+                if (getch() == 13) {
+                    break;
+                }
+            }
         }
 
     } while (resposta[0] != '0');
-
     return  0;
 }

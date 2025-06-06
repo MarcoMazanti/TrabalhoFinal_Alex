@@ -57,5 +57,7 @@ void somaDominio() {
 
             fclose(out);
         }
+    } else {
+        printf("Erro ao abrir arquivo.\n");
     }
 }

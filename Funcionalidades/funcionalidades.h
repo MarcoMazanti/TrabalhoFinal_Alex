@@ -4,5 +4,6 @@
 #include "B1/ListarRegistros.h"
 #include "B2/FiltrarRegistros.h"
 #include "M1/SomaDominio.h"
+#include "M2/ExportarRegistros.h"
 
 #endif

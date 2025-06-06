@@ -20,13 +20,13 @@ void listarRegistros() {
 
         while (fread(&r, sizeof(Record), 1, fp) == 1) {
             if (count < 100) {
-                printf("| %-9s | %-13s | %-15s | %7d | %10d |\n", r.date, r.domain, r.location, r.transaction_count, r.value);
+                printf("| %-9s | %-13s | %-15s | %7d | %10d |\n", r.date, r.domain, r.location, r.value, r.transaction_count);
 
                 if (count == 99) {
                     printf("+--------------------------------------------------------------------+\n");
                 }
             }
-            fprintf(txt, "| %-9s | %-13s | %-15s | %7d | %10d |\n", r.date, r.domain, r.location, r.transaction_count, r.value);
+            fprintf(txt, "| %-9s | %-13s | %-15s | %7d | %10d |\n", r.date, r.domain, r.location, r.value, r.transaction_count);
             count++;
         }
         fprintf(txt, "+---------------------------------------------------------------------+\n");

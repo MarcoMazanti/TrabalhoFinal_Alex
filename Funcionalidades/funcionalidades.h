@@ -6,5 +6,6 @@
 #include "M1/SomaDominio.h"
 #include "M2/ExportarRegistros.h"
 #include "M3/MediaLocalidade.h"
+#include "A1/BuscaRegistro.h"
 
 #endif

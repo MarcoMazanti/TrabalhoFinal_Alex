@@ -33,7 +33,7 @@ void novoRegistro() {
     } while (r.value <= 0);
 
     do {
-        printf("Digite o número de transações: ");
+        printf("Digite o numero de transacoes: ");
         scanf("%d", &r.transaction_count);
     } while (r.transaction_count <= 0);
 

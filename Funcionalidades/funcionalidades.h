@@ -9,5 +9,6 @@
 #include "A1/BuscaRegistro.h"
 #include "A2/listarLocalidades.h"
 #include "E1/NovoRegistro.h"
+#include "E2/GerarRelatorio.h"
 
 #endif

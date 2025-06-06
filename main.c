@@ -39,7 +39,7 @@ int main(void) {
         } else if (strcasecmp(resposta, "E1") == 0) {
             novoRegistro();
         } else if (strcasecmp(resposta, "E2") == 0) {
-
+            gerarRelatorio();
         } else {
             printf("Saindo do Programa!\n");
             break;

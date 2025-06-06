@@ -5,5 +5,6 @@
 #include "B2/FiltrarRegistros.h"
 #include "M1/SomaDominio.h"
 #include "M2/ExportarRegistros.h"
+#include "M3/MediaLocalidade.h"
 
 #endif

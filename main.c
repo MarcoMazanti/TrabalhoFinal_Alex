@@ -31,7 +31,7 @@ int main(void) {
         } else if (strcasecmp(resposta, "M2") == 0) {
             exportarRegistros();
         } else if (strcasecmp(resposta, "M3") == 0) {
-
+            calcularMediaLocalidade();
         } else if (strcasecmp(resposta, "A1") == 0) {
 
         } else if (strcasecmp(resposta, "A2") == 0) {

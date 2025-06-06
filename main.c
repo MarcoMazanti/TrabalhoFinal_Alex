@@ -35,7 +35,7 @@ int main(void) {
         } else if (strcasecmp(resposta, "A1") == 0) {
             buscaRegistro();
         } else if (strcasecmp(resposta, "A2") == 0) {
-
+            listarLocalidades();
         } else if (strcasecmp(resposta, "E1") == 0) {
 
         } else if (strcasecmp(resposta, "E2") == 0) {

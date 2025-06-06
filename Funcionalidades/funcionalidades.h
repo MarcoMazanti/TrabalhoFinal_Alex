@@ -7,5 +7,6 @@
 #include "M2/ExportarRegistros.h"
 #include "M3/MediaLocalidade.h"
 #include "A1/BuscaRegistro.h"
+#include "A2/listarLocalidades.h"
 
 #endif

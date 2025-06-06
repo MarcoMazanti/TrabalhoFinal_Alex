@@ -8,5 +8,6 @@
 #include "M3/MediaLocalidade.h"
 #include "A1/BuscaRegistro.h"
 #include "A2/listarLocalidades.h"
+#include "E1/NovoRegistro.h"
 
 #endif

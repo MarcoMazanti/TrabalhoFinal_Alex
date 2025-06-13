@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "ExportarRegistros.h"
 
 #include <stdlib.h>
@@ -13,9 +13,9 @@ void exportarRegistros() {
     scanf("%s", data);
 
     char dataConvertida[50];
-    snprintf(dataConvertida, sizeof(dataConvertida), "../export_%.4s_%.2s_%.2s.csv", data + 6, data + 3, data);
+    snprintf(dataConvertida, sizeof(dataConvertida), "../data/export_%.4s_%.2s_%.2s.csv", data + 6, data + 3, data);
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
     FILE *csv = fopen(dataConvertida, "w");
 
     if (fp && csv) {

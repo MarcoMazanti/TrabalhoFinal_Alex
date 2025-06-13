@@ -4,7 +4,7 @@
 #include "FiltrarRegistros.h"
 
 
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 
 void filtrarRegistros() {
     char nome[50];
@@ -12,7 +12,7 @@ void filtrarRegistros() {
     printf("Digite qual dominio deseja filtrar: ");
     scanf("%s", nome);
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
     Record r;
 
     for (int i = 0; i < strlen(nome); i++) {
@@ -20,7 +20,7 @@ void filtrarRegistros() {
     }
 
     char nomeSaida[100];
-    sprintf(nomeSaida, "../filtro_dominio_%s.txt", nome);
+    sprintf(nomeSaida, "../data/filtro_dominio_%s.txt", nome);
 
     FILE *out = fopen(nomeSaida, "w");
 

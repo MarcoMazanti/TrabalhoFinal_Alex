@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <conio.h>
-#include "Funcionalidades/funcionalidades.h"
+#include "include/funcionalidades.h"
 
 int main(void) {
     char resposta[2];

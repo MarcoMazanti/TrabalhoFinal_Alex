@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "NovoRegistro.h"
 
 #include <ctype.h>
@@ -7,7 +7,7 @@
 void novoRegistro() {
     Record r;
 
-    FILE *fp = fopen("../bankdataset.dat", "ab");
+    FILE *fp = fopen("../bin/bankdataset.dat", "ab");
 
     if (!fp) {
         printf("Erro ao abrir o arquivo\n");

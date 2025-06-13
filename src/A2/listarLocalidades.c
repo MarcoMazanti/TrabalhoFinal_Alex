@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "listarLocalidades.h"
 
 #define MAX_LOCALIDADES 500
@@ -21,8 +21,8 @@ void listarLocalidades() {
     Record r;
     char localidades[MAX_LOCALIDADES][50];
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
-    FILE *out = fopen("../localidades_ordenadas.txt", "w");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
+    FILE *out = fopen("../data/localidades_ordenadas.txt", "w");
 
     if (fp && out) {
         int quant = 0;

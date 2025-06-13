@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "GerarRelatorio.h"
 
 #include <string.h>
@@ -9,8 +9,8 @@
 void gerarRelatorio() {
     Record r;
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
-    FILE *out = fopen("../relatorio.txt", "w");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
+    FILE *out = fopen("../data/relatorio.txt", "w");
 
     IndicadorDominio dominio[MAX_DOMINIO];
     int dominioIndex = 0;

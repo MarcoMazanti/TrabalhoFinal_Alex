@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 #include "SomaDominio.h"
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 
 #define MAX_DOMINIOS 100
 
 void somaDominio() {
     Record r;
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
 
     if (fp) {
         int quantDominios = 0;
@@ -33,7 +33,7 @@ void somaDominio() {
 
         fclose(fp);
 
-        FILE *out = fopen("../resumo_transacoes.txt", "w");
+        FILE *out = fopen("../data/resumo_transacoes.txt", "w");
 
         if (out) {
             fprintf(out, "+---------------+----------------------+\n");

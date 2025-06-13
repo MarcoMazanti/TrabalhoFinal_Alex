@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "MediaLocalidade.h"
 
 #include <stdlib.h>
@@ -16,7 +16,7 @@ void calcularMediaLocalidade() {
     int quantCidades = 0;
     CidadeInfo totalLocalidade[MAX_LOCALIDADES];
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
 
     if (fp) {
         while (fread(&r, sizeof(Record), 1, fp) == 1) {
@@ -42,7 +42,7 @@ void calcularMediaLocalidade() {
 
         qsort(totalLocalidade, quantCidades, sizeof(CidadeInfo), compararCidades);
 
-        FILE *out = fopen("../media_por_localidade.txt", "w");
+        FILE *out = fopen("../data/media_por_localidade.txt", "w");
 
         if (out) {
             printf("+---------------------+------------+\n");

@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "ListarRegistros.h"
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 
 void listarRegistros() {
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
     Record r;
-    FILE *txt = fopen("../relatorio_registros.txt", "w");
+    FILE *txt = fopen("../data/relatorio_registros.txt", "w");
 
     if (fp && txt) {
         int count = 0;

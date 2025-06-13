@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../modelRecord.h"
+#include "../../include/modelRecord.h"
 #include "BuscaRegistro.h"
 
 int compareByValue(const void *a, const void *b) {
@@ -12,8 +12,8 @@ int compareByValue(const void *a, const void *b) {
 void buscarPorValorSequencial(int valorBusca) {
     Record r;
 
-    FILE *fp = fopen("../bankdataset.dat", "rb");
-    FILE *out = fopen("../busca_valor_sequencial.txt", "w");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
+    FILE *out = fopen("../data/busca_valor_sequencial.txt", "w");
 
     if (fp && out) {
         printf("=== Registro da Busca ===");
@@ -38,7 +38,7 @@ void buscarPorValorSequencial(int valorBusca) {
 }
 
 void buscarPorValorBinaria(int ValorBusca) {
-    FILE *fp = fopen("../bankdataset.dat", "rb");
+    FILE *fp = fopen("../bin/bankdataset.dat", "rb");
     fseek(fp, 0, SEEK_END);
     long size = ftell(fp);
     rewind(fp);
@@ -55,7 +55,7 @@ void buscarPorValorBinaria(int ValorBusca) {
 
     Record *encontrado = bsearch(&chave, vetor, total, sizeof(Record), compareByValue);
     if (encontrado) {
-        FILE *out = fopen("../busca_valor_sequencial.txt", "w");
+        FILE *out = fopen("../data/busca_valor_sequencial.txt", "w");
 
         if (out) {
             printf("Data: %s\n", encontrado->date);

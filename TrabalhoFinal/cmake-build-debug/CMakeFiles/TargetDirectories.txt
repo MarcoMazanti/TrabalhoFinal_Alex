@@ -1,0 +1,4 @@
+C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug/CMakeFiles/TrabalhoFinalLib.dir
+C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug/CMakeFiles/TrabalhoFinal.dir
+C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug/CMakeFiles/rebuild_cache.dir

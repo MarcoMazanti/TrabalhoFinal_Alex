@@ -1,0 +1,5 @@
+C:\Users\marco\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/marco/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "C:\Users\marco\OneDrive\Área de Trabalho\TrabalhoFinal" -B "C:\Users\marco\OneDrive\Área de Trabalho\TrabalhoFinal\cmake-build-debug"
+-- Arquivos encontrados: C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/B1/ListarRegistros.c;C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c;C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/main.c
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/marco/OneDrive/Área de Trabalho/TrabalhoFinal/cmake-build-debug
